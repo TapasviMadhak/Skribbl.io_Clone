@@ -1,0 +1,36 @@
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 330px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #e0e7ff97;
+}
+
+.chat-input {
+  display: flex;
+
+}
+
+.chat-input{
+  background-color: #e0e7ff97;
+  color: azure;
+  padding: 10px;
+}
+
+.chat-input input {
+  flex-grow: 1;
+
+  
+}
+
+.chat-input button {
+  padding: 10px;
+}

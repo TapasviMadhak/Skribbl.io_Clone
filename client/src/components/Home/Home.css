@@ -1,0 +1,99 @@
+/* Base layout styles */
+.home-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-size: 500px;
+    background-repeat: repeat;
+    position: relative;
+    gap: 2rem;
+  }
+  
+  /* Main content container styling */
+  .home-container {
+    width: 100%;
+    max-width: 600px; /* Wider than login/signup for better room management layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  /* Title styling - maintaining consistency with other pages */
+
+  
+  /* Container for room creation and joining */
+  .container-home {
+    width: 100%;
+    width: 450px;
+    padding: 2.5rem;
+    background: rgba(255, 255, 255, 0.179);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: auto;
+  }
+  
+
+  
+
+  
+  /* Label styling */
+  .container-home label {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+  
+  /* Button styling - making them stand out more for main actions */
+  .container-home button {
+    padding: 1rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: "chewy";
+  }
+  
+.button-home {
+    padding: 0.8rem;
+    background: #007bff; /* Blue button to match the theme */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    font-family: "chewy";
+}
+
+  
+  /* Responsive design */
+  @media (max-width: 480px) {
+    .home-container .title {
+      font-size: 3rem;
+    }
+  
+    .container-home {
+      padding: 1.5rem;
+      width: 90%;
+    }
+  
+    .container-home button {
+      padding: 0.8rem;
+      font-size: 1rem;
+    }
+  }

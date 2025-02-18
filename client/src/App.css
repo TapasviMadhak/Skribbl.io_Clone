@@ -1,0 +1,32 @@
+/* index.css */
+@font-face {
+  font-family: "Chewy";
+  src: url("./assets/Chewy/Chewy-Regular.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;  /* This helps with font loading performance */
+}
+
+@font-face {
+  font-family: "Honk";
+  src: url("./assets/Honk/static/Honk-Regular.ttf") format("truetype");
+}
+
+/* Apply the font globally */
+body {
+  font-family: "Chewy", sans-serif;  /* Include a fallback font */
+  background-image: url('./assets/skribbl.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-family: "Honk", sans-serif;
+}

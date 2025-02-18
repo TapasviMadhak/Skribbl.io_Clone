@@ -1,0 +1,55 @@
+.canvas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 20px;
+}
+
+.colors {
+  display: flex;
+  gap: 5px;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.color.active {
+  border: 2px solid black;
+}
+
+.brush-sizes {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.brush {
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.brush:hover {
+  transform: scale(1.2);
+}
+
+.brush.active {
+  border: 2px solid black;
+}
+
+.canvas {
+  border: 1px solid #ccc;
+  cursor: crosshair;
+  background-color: aliceblue;
+}

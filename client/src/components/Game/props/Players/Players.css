@@ -1,0 +1,15 @@
+.players-panel h2 {
+    text-align: center;
+  }
+  
+  .players-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .player-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  

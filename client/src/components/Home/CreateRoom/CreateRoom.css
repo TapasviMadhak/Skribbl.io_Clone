@@ -1,0 +1,193 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Room Wrapper */
+  .room-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .title-cr {
+    font-family: "Honk", sans-serif;  
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    
+    margin-bottom: 20px;
+  }
+  
+  /* Create Room Page */
+  .create-room-page {
+    background: rgba(255, 255, 255, 0.179);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 1100px;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .game-info p {
+    font-size: 1.2rem;
+    color: #ffffff
+  }
+  
+  /* Room Container */
+  .room-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+  }
+  
+  /* Left Panel */
+  .left-panel {
+    background-color: rgba(255, 255, 255, 0.179);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .left-panel h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .left-panel ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .left-panel li {
+    color: #333;
+    background: #eaeaea63;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  
+  /* Canvas Container */
+  .middle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.179);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .options label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .options input {
+
+    width: 115%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .start-button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .start-button:hover {
+    background-color: #45a049;
+  }
+  
+  .room-code {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #fff
+  }
+  
+  /* Right Panel */
+  .right-panel {
+    background-color: rgba(255, 255, 255, 0.179);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .right-panel h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .chat-box {
+    flex: 1;
+    overflow-y: auto;
+    max-height: 170px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff00;
+  }
+  
+  .chat-box p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  .chat-form {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .chat-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 0.9rem;
+  }
+  
+  .chat-form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .chat-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .room-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  

@@ -1,0 +1,150 @@
+/* Modify the auth-wrapper to better handle different content lengths */
+.auth-wrapper {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;  /* Increased top/bottom padding */
+  background-size: 500px;
+  background-repeat: repeat;
+  position: relative;
+}
+
+/* Add specific positioning for the title */
+.title {
+  font-family: "Honk", sans-serif;
+  font-size: 4.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 0;  /* This helps push the content to the vertical center */
+  margin-bottom: 0;  /* Remove bottom margin since we're using gap */
+  text-align: center;
+}
+
+/* Adjust container positioning */
+.container {
+  width: 100%;
+  max-width: 380px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.179);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin-bottom: auto;  /* This helps push the content to the vertical center */
+}
+
+/* Form header */
+.form-text {
+  color: #ffffff;
+  font-size: 23px;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Input container */
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Label styling */
+label {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Input field styling */
+input {
+  padding: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Error messages */
+form p {
+  color: #ff4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Submit button */
+button {
+  padding: 0.8rem;
+  background: #007bff; /* Blue button to match the theme */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  font-family: "chewy";
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Login/Signup link section */
+.p {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Media queries */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  input, button {
+    padding: 0.7rem;
+  }
+
+  .form-text {
+    font-size: 1rem;
+  }
+}
