@@ -21,6 +21,7 @@ Welcome to the Interactive Drawing Game! This project is an engaging real-time d
 - Node.js (v14 or later)
 - npm (v6 or later)
 - Git
+- Make sure MongoDB is running in background
 
 ### Clone the Repository
 
